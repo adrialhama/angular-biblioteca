@@ -1,0 +1,75 @@
+{
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "El imperio final",
+      "autor": "Brandom Sanderson",
+      "editorial": "nova"
+    },
+    {
+      "id": 2,
+      "titulo": "El cuco de cristal",
+      "autor": "Javier Castillo",
+      "editorial": "suma"
+    },
+    {
+      "id": 3,
+      "titulo": "Tú eres tu lugar seguro",
+      "autor": "María Escaplez",
+      "editorial": "planeta"
+    },
+    {
+      "id": 4,
+      "titulo": "Castillos de fuego",
+      "autor": "Ignacio Martínez de Pisón",
+      "editorial": "suma"
+    },
+    {
+      "id": 5,
+      "titulo": "Elantris",
+      "autor": "Brandom Sanderson",
+      "editorial": "B de bolsillo"
+    },
+    {
+      "id": 6,
+      "titulo": "Hijos de la fábula",
+      "autor": "Fernando Aramburu",
+      "editorial": "Tusquets Editores"
+    }
+  ],
+  "prestamos": [
+    {
+      "id": 1,
+      "id_usuario": 1,
+      "id_libro": 2,
+      "fecha_prestamo": "2023-01-01",
+      "fecha_vencimiento": "2023-01-15"
+    },
+    {
+      "id": 2,      
+      "id_usuario": 2,
+      "id_libro": 3,
+      "fecha_prestamo": "2023-01-03",
+      "fecha_vencimiento": "2023-01-18"
+    },
+    {
+      "id": 3,      
+      "id_usuario": 1,
+      "id_libro": 1,
+      "fecha_prestamo": "2023-03-06",
+      "fecha_vencimiento": "2023-03-21"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "email": "bibliotecario@bibliotecario.com",
+      "password": "bibliotecario"
+    }
+  ]
+}
