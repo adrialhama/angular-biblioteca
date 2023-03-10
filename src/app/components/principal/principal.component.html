@@ -1,29 +1,37 @@
-<!--Link de boostrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<div class="espacio">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../assets/img/cabecera01.jpg" class="d-block w-100" alt="cab01" />
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/cabecera02.jpg" class="d-block w-100" alt="cab02" />
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/cabecera03.jpg" class="d-block w-100" alt="cab03" />
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/cabecera04.jpg" class="d-block w-100" alt="cab04" />
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <h1>Ejemplo de login con API REST</h1>
+<div class="container-fluid">
+  <mdb-carousel [controls]="true" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img
+            src="../assets/img/cabecera01.jpg"
+            class="d-block w-100"
+            alt="cab01"
+          />
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+          src="../assets/img/cabecera02.jpg"
+          class="d-block w-100"
+          alt="cab02"
+        />
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+          src="../assets/img/cabecera03.jpg"
+          class="d-block w-100"
+          alt="cab03"
+        />
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+          src="../assets/img/cabecera04.jpg"
+          class="d-block w-100"
+          alt="cab04"
+        />
+        </mdb-carousel-item>
+  </mdb-carousel>
+    <h1 class="h1 text-center my-4 text-primary">Catálogo de libros</h1>
+    <a href="CrearLibro"><button class="btn btn-primary">
+      Crear Libro
+    </button></a>
+    <app-peticionget></app-peticionget> 
 </div>

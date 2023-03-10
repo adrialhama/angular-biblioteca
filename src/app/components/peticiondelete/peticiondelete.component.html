@@ -1,0 +1,20 @@
+<!-- <div class="espacio">
+<br><br><br><br>
+<button value="borrar 20" (click)="borrarLibro">Borrar 20</button>
+</div> -->
+
+<div class="container-fluid">
+  <h2 class="h2 fw-semibold text-primary my-4"><b>Borrar Libro:</b></h2>
+  <form [formGroup]="formulario" (ngSubmit)="borrarLibro()">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 text-center mb-3">
+        <label for="id">Id del libro:</label>
+        <input type="number" id="id" formControlName="id">
+      </div>
+      <div class="col-12 text-center">
+        <p>¿Estás seguro de querer eliminar?</p>
+        <button type="submit" value="Enviar" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </form>
+</div>

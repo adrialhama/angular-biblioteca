@@ -14,6 +14,9 @@ export class LogoutComponent implements OnInit {
   ngOnInit(): void {
     if (this.token){
       localStorage.removeItem('token');
+      setTimeout(() => {
+        window.location.href = '/home';
+      }, 1500); //Redirige al home en 1,5 seg
     }
   }
 

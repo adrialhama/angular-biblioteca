@@ -2,39 +2,66 @@
   "libros": [
     {
       "id": 1,
-      "titulo": "El imperio final",
+      "foto": "https://imagessl8.casadellibro.com/a/l/t7/28/9788466658928.jpg",
+      "titulo": "Aleación de Ley",
       "autor": "Brandom Sanderson",
-      "editorial": "nova"
+      "editorial": "Nova"
     },
     {
       "id": 2,
+      "foto": "https://imagessl2.casadellibro.com/a/l/t7/52/9788491293552.jpg",
       "titulo": "El cuco de cristal",
       "autor": "Javier Castillo",
       "editorial": "suma"
     },
     {
       "id": 3,
+      "foto": "https://imagessl3.casadellibro.com/a/l/t7/93/9788402427793.jpg",
       "titulo": "Tú eres tu lugar seguro",
       "autor": "María Escaplez",
       "editorial": "planeta"
     },
     {
       "id": 4,
+      "foto": "https://imagessl0.casadellibro.com/a/l/t7/80/9788432241680.jpg",
       "titulo": "Castillos de fuego",
       "autor": "Ignacio Martínez de Pisón",
       "editorial": "suma"
     },
     {
       "id": 5,
+      "foto": "https://imagessl4.casadellibro.com/a/l/t7/34/9788490705834.jpg",
       "titulo": "Elantris",
       "autor": "Brandom Sanderson",
       "editorial": "B de bolsillo"
     },
     {
       "id": 6,
+      "foto": "https://imagessl1.casadellibro.com/a/l/t7/81/9788411072281.jpg",
       "titulo": "Hijos de la fábula",
       "autor": "Fernando Aramburu",
       "editorial": "Tusquets Editores"
+    },
+    {
+      "id": 7,
+      "foto": "https://imagessl8.casadellibro.com/a/l/t7/48/9788418483448.jpg",
+      "titulo": "Antes de Diciembre",
+      "autor": "Joana Marcus",
+      "editorial": "Montena"
+    },
+    {
+      "id": 8,
+      "foto": "https://imagessl7.casadellibro.com/a/l/t7/27/9788420456027.jpg",
+      "titulo": "Las madres(La novia gitana)",
+      "autor": "Carmen Mola",
+      "editorial": "Alfaguara"
+    },
+    {
+      "id": 9,
+      "foto": "https://imagessl7.casadellibro.com/a/l/t7/57/9788418945557.jpg",
+      "titulo": "Los crímenes de Hamlet",
+      "autor": "Malenka Ramos",
+      "editorial": "Contraluz Editorial"
     }
   ],
   "prestamos": [
@@ -46,14 +73,14 @@
       "fecha_vencimiento": "2023-01-15"
     },
     {
-      "id": 2,      
+      "id": 2,
       "id_usuario": 2,
       "id_libro": 3,
       "fecha_prestamo": "2023-01-03",
       "fecha_vencimiento": "2023-01-18"
     },
     {
-      "id": 3,      
+      "id": 3,
       "id_usuario": 1,
       "id_libro": 1,
       "fecha_prestamo": "2023-03-06",
@@ -64,12 +91,14 @@
     {
       "id": 1,
       "email": "admin@admin.com",
-      "password": "admin"
+      "password": "admin",
+      "rol": "admin"
     },
     {
       "id": 2,
       "email": "bibliotecario@bibliotecario.com",
-      "password": "bibliotecario"
+      "password": "bibliotecario",
+      "rol": "bibliotecario"
     }
   ]
 }

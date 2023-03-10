@@ -13,16 +13,21 @@ export class AuthService {
     constructor(private http: HttpClient) { }
 
     login(email: string, password: string): Observable<any> {
-        return this.http.get(`${this.apiUrl}?usuario=${email}&contrasena=${password}`);
+        return this.http.get<Usuarios>(`${this.apiUrl}?usuario=${email}&contrasena=${password}`);
     }
 
-    logout(): void {
-        // Implementa el código necesario para cerrar sesión
-    }
+    /*logout(): void {
+        localStorage.removeItem('token');
+        setTimeout(() => {
+            window.location.href = '/home';
+          }, 5000); // 5000 milisegundos = 5 segundos
+        // redirigir al usuario a la página de Home
+    }      
 
     isLoggedIn(): boolean {
-        // Implementa el código necesario para verificar si el usuario ha iniciado sesión
-        return false;
-    }
+        return localStorage.getItem('token') !== null;
+        // Si el token existe, entonces el usuario ha iniciado sesión; de lo contrario, el usuario no ha iniciado sesión
+    } 
+    */     
 
 }
